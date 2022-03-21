@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4851CFFF27E7A0C800521965 /* ModelCreatorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4851CFFE27E7A0C800521965 /* ModelCreatorHelper.swift */; };
+		4851D00227E7EC1300521965 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4851D00127E7EC1300521965 /* Alamofire */; };
+		48B077B727DC8F2A00ECAEBF /* HomeSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B077B627DC8F2A00ECAEBF /* HomeSearchInteractor.swift */; };
+		48E2D7B327DC3CE600F38A28 /* MeLiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7B227DC3CE600F38A28 /* MeLiAppApp.swift */; };
+		48E2D7B527DC3CE600F38A28 /* HomeSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7B427DC3CE600F38A28 /* HomeSearchView.swift */; };
+		48E2D7B727DC3CE700F38A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48E2D7B627DC3CE700F38A28 /* Assets.xcassets */; };
+		48E2D7BA27DC3CE700F38A28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48E2D7B927DC3CE700F38A28 /* Preview Assets.xcassets */; };
+		48E2D7C427DC3CE700F38A28 /* MeLiAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7C327DC3CE700F38A28 /* MeLiAppTests.swift */; };
+		48E2D7CE27DC3CE700F38A28 /* MeLiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7CD27DC3CE700F38A28 /* MeLiAppUITests.swift */; };
+		48E2D7D027DC3CE700F38A28 /* MeLiAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7CF27DC3CE700F38A28 /* MeLiAppUITestsLaunchTests.swift */; };
+		48E2D7E127DC4AE200F38A28 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7E027DC4AE200F38A28 /* SplashView.swift */; };
+		48E2D7E327DC5FF900F38A28 /* ListSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7E227DC5FF900F38A28 /* ListSearchView.swift */; };
+		48E2D7E527DC64F100F38A28 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7E427DC64F100F38A28 /* DataModel.swift */; };
+		48E2D7E727DC657D00F38A28 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7E627DC657D00F38A28 /* Item.swift */; };
+		48E2D7E927DC661000F38A28 /* ListSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7E827DC661000F38A28 /* ListSearchInteractor.swift */; };
+		48E2D7EB27DC6D5100F38A28 /* HomeSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7EA27DC6D5100F38A28 /* HomeSearchRouter.swift */; };
+		48E2D7ED27DC6D7400F38A28 /* HomeSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7EC27DC6D7400F38A28 /* HomeSearchPresenter.swift */; };
+		48E2D7EF27DC6E3200F38A28 /* ListSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7EE27DC6E3200F38A28 /* ListSearchPresenter.swift */; };
+		48E2D7F127DC6EEE00F38A28 /* ListSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7F027DC6EEE00F38A28 /* ListSearchRouter.swift */; };
+		48E2D7F327DC6F6D00F38A28 /* DetailSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7F227DC6F6D00F38A28 /* DetailSearchView.swift */; };
+		48E2D7F527DC6F7C00F38A28 /* DetailSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7F427DC6F7C00F38A28 /* DetailSearchPresenter.swift */; };
+		48E2D7F727DC6F8B00F38A28 /* DetailSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2D7F627DC6F8B00F38A28 /* DetailSearchInteractor.swift */; };
+		48F42D5A27DD4BAD0004969E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F42D5927DD4BAD0004969E /* APIService.swift */; };
+		48F42D5F27DD674F0004969E /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F42D5E27DD674F0004969E /* ListItemCell.swift */; };
+		48F42D6227DDC8030004969E /* mockMeLi.json in Resources */ = {isa = PBXBuildFile; fileRef = 48F42D6127DDC8030004969E /* mockMeLi.json */; };
+		48F42D6527DDCBBA0004969E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F42D6427DDCBBA0004969E /* Utils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48E2D7C027DC3CE700F38A28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48E2D7A727DC3CE500F38A28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48E2D7AE27DC3CE600F38A28;
+			remoteInfo = MeLiApp;
+		};
+		48E2D7CA27DC3CE700F38A28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48E2D7A727DC3CE500F38A28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48E2D7AE27DC3CE600F38A28;
+			remoteInfo = MeLiApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4851CFFE27E7A0C800521965 /* ModelCreatorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelCreatorHelper.swift; sourceTree = "<group>"; };
+		48B077B627DC8F2A00ECAEBF /* HomeSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchInteractor.swift; sourceTree = "<group>"; };
+		48E2D7AF27DC3CE600F38A28 /* MeLiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeLiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E2D7B227DC3CE600F38A28 /* MeLiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeLiAppApp.swift; sourceTree = "<group>"; };
+		48E2D7B427DC3CE600F38A28 /* HomeSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchView.swift; sourceTree = "<group>"; };
+		48E2D7B627DC3CE700F38A28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48E2D7B927DC3CE700F38A28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		48E2D7BF27DC3CE700F38A28 /* MeLiAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeLiAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E2D7C327DC3CE700F38A28 /* MeLiAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeLiAppTests.swift; sourceTree = "<group>"; };
+		48E2D7C927DC3CE700F38A28 /* MeLiAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeLiAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E2D7CD27DC3CE700F38A28 /* MeLiAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeLiAppUITests.swift; sourceTree = "<group>"; };
+		48E2D7CF27DC3CE700F38A28 /* MeLiAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeLiAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		48E2D7E027DC4AE200F38A28 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		48E2D7E227DC5FF900F38A28 /* ListSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSearchView.swift; sourceTree = "<group>"; };
+		48E2D7E427DC64F100F38A28 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		48E2D7E627DC657D00F38A28 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		48E2D7E827DC661000F38A28 /* ListSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSearchInteractor.swift; sourceTree = "<group>"; };
+		48E2D7EA27DC6D5100F38A28 /* HomeSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchRouter.swift; sourceTree = "<group>"; };
+		48E2D7EC27DC6D7400F38A28 /* HomeSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchPresenter.swift; sourceTree = "<group>"; };
+		48E2D7EE27DC6E3200F38A28 /* ListSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSearchPresenter.swift; sourceTree = "<group>"; };
+		48E2D7F027DC6EEE00F38A28 /* ListSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSearchRouter.swift; sourceTree = "<group>"; };
+		48E2D7F227DC6F6D00F38A28 /* DetailSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSearchView.swift; sourceTree = "<group>"; };
+		48E2D7F427DC6F7C00F38A28 /* DetailSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSearchPresenter.swift; sourceTree = "<group>"; };
+		48E2D7F627DC6F8B00F38A28 /* DetailSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSearchInteractor.swift; sourceTree = "<group>"; };
+		48F42D5927DD4BAD0004969E /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		48F42D5E27DD674F0004969E /* ListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCell.swift; sourceTree = "<group>"; };
+		48F42D6127DDC8030004969E /* mockMeLi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockMeLi.json; sourceTree = "<group>"; };
+		48F42D6427DDCBBA0004969E /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		48F42D6627DE89630004969E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48E2D7AC27DC3CE600F38A28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4851D00227E7EC1300521965 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E2D7BC27DC3CE700F38A28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E2D7C627DC3CE700F38A28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48E2D7A627DC3CE500F38A28 = {
+			isa = PBXGroup;
+			children = (
+				48E2D7B127DC3CE600F38A28 /* MeLiApp */,
+				48E2D7C227DC3CE700F38A28 /* MeLiAppTests */,
+				48E2D7CC27DC3CE700F38A28 /* MeLiAppUITests */,
+				48E2D7B027DC3CE600F38A28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48E2D7B027DC3CE600F38A28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48E2D7AF27DC3CE600F38A28 /* MeLiApp.app */,
+				48E2D7BF27DC3CE700F38A28 /* MeLiAppTests.xctest */,
+				48E2D7C927DC3CE700F38A28 /* MeLiAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48E2D7B127DC3CE600F38A28 /* MeLiApp */ = {
+			isa = PBXGroup;
+			children = (
+				48F42D6627DE89630004969E /* Info.plist */,
+				48F42D6327DDCBA40004969E /* Utils */,
+				48F42D6027DDC7DC0004969E /* Mocks */,
+				48E2D7B227DC3CE600F38A28 /* MeLiAppApp.swift */,
+				48E2D7E027DC4AE200F38A28 /* SplashView.swift */,
+				48E2D7DC27DC3D8200F38A28 /* Modules */,
+				48F42D5827DD48090004969E /* Model */,
+				48E2D7B627DC3CE700F38A28 /* Assets.xcassets */,
+				48E2D7B827DC3CE700F38A28 /* Preview Content */,
+			);
+			path = MeLiApp;
+			sourceTree = "<group>";
+		};
+		48E2D7B827DC3CE700F38A28 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				48E2D7B927DC3CE700F38A28 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		48E2D7C227DC3CE700F38A28 /* MeLiAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				48E2D7C327DC3CE700F38A28 /* MeLiAppTests.swift */,
+			);
+			path = MeLiAppTests;
+			sourceTree = "<group>";
+		};
+		48E2D7CC27DC3CE700F38A28 /* MeLiAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				48E2D7CD27DC3CE700F38A28 /* MeLiAppUITests.swift */,
+				48E2D7CF27DC3CE700F38A28 /* MeLiAppUITestsLaunchTests.swift */,
+			);
+			path = MeLiAppUITests;
+			sourceTree = "<group>";
+		};
+		48E2D7DC27DC3D8200F38A28 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				48E2D7DD27DC3DAD00F38A28 /* HomeSearch */,
+				48E2D7DE27DC3DCC00F38A28 /* ListSearch */,
+				48E2D7DF27DC3E1200F38A28 /* DetailSearch */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		48E2D7DD27DC3DAD00F38A28 /* HomeSearch */ = {
+			isa = PBXGroup;
+			children = (
+				48E2D7B427DC3CE600F38A28 /* HomeSearchView.swift */,
+				48B077B627DC8F2A00ECAEBF /* HomeSearchInteractor.swift */,
+				48E2D7EC27DC6D7400F38A28 /* HomeSearchPresenter.swift */,
+				48E2D7EA27DC6D5100F38A28 /* HomeSearchRouter.swift */,
+			);
+			path = HomeSearch;
+			sourceTree = "<group>";
+		};
+		48E2D7DE27DC3DCC00F38A28 /* ListSearch */ = {
+			isa = PBXGroup;
+			children = (
+				48F42D5E27DD674F0004969E /* ListItemCell.swift */,
+				48E2D7E227DC5FF900F38A28 /* ListSearchView.swift */,
+				48E2D7E827DC661000F38A28 /* ListSearchInteractor.swift */,
+				48E2D7EE27DC6E3200F38A28 /* ListSearchPresenter.swift */,
+				48E2D7F027DC6EEE00F38A28 /* ListSearchRouter.swift */,
+			);
+			path = ListSearch;
+			sourceTree = "<group>";
+		};
+		48E2D7DF27DC3E1200F38A28 /* DetailSearch */ = {
+			isa = PBXGroup;
+			children = (
+				48E2D7F227DC6F6D00F38A28 /* DetailSearchView.swift */,
+				48E2D7F627DC6F8B00F38A28 /* DetailSearchInteractor.swift */,
+				48E2D7F427DC6F7C00F38A28 /* DetailSearchPresenter.swift */,
+			);
+			path = DetailSearch;
+			sourceTree = "<group>";
+		};
+		48F42D5827DD48090004969E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48E2D7E427DC64F100F38A28 /* DataModel.swift */,
+				48E2D7E627DC657D00F38A28 /* Item.swift */,
+				48F42D5927DD4BAD0004969E /* APIService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48F42D6027DDC7DC0004969E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				48F42D6127DDC8030004969E /* mockMeLi.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		48F42D6327DDCBA40004969E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4851CFFE27E7A0C800521965 /* ModelCreatorHelper.swift */,
+				48F42D6427DDCBBA0004969E /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48E2D7AE27DC3CE600F38A28 /* MeLiApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E2D7D327DC3CE700F38A28 /* Build configuration list for PBXNativeTarget "MeLiApp" */;
+			buildPhases = (
+				48E2D7AB27DC3CE600F38A28 /* Sources */,
+				48E2D7AC27DC3CE600F38A28 /* Frameworks */,
+				48E2D7AD27DC3CE600F38A28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeLiApp;
+			packageProductDependencies = (
+				4851D00127E7EC1300521965 /* Alamofire */,
+			);
+			productName = MeLiApp;
+			productReference = 48E2D7AF27DC3CE600F38A28 /* MeLiApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48E2D7BE27DC3CE700F38A28 /* MeLiAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E2D7D627DC3CE700F38A28 /* Build configuration list for PBXNativeTarget "MeLiAppTests" */;
+			buildPhases = (
+				48E2D7BB27DC3CE700F38A28 /* Sources */,
+				48E2D7BC27DC3CE700F38A28 /* Frameworks */,
+				48E2D7BD27DC3CE700F38A28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48E2D7C127DC3CE700F38A28 /* PBXTargetDependency */,
+			);
+			name = MeLiAppTests;
+			productName = MeLiAppTests;
+			productReference = 48E2D7BF27DC3CE700F38A28 /* MeLiAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		48E2D7C827DC3CE700F38A28 /* MeLiAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E2D7D927DC3CE700F38A28 /* Build configuration list for PBXNativeTarget "MeLiAppUITests" */;
+			buildPhases = (
+				48E2D7C527DC3CE700F38A28 /* Sources */,
+				48E2D7C627DC3CE700F38A28 /* Frameworks */,
+				48E2D7C727DC3CE700F38A28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48E2D7CB27DC3CE700F38A28 /* PBXTargetDependency */,
+			);
+			name = MeLiAppUITests;
+			productName = MeLiAppUITests;
+			productReference = 48E2D7C927DC3CE700F38A28 /* MeLiAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48E2D7A727DC3CE500F38A28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					48E2D7AE27DC3CE600F38A28 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					48E2D7BE27DC3CE700F38A28 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 48E2D7AE27DC3CE600F38A28;
+					};
+					48E2D7C827DC3CE700F38A28 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 48E2D7AE27DC3CE600F38A28;
+					};
+				};
+			};
+			buildConfigurationList = 48E2D7AA27DC3CE500F38A28 /* Build configuration list for PBXProject "MeLiApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48E2D7A627DC3CE500F38A28;
+			packageReferences = (
+				4851D00027E7EC1300521965 /* XCRemoteSwiftPackageReference "alamofire" */,
+			);
+			productRefGroup = 48E2D7B027DC3CE600F38A28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48E2D7AE27DC3CE600F38A28 /* MeLiApp */,
+				48E2D7BE27DC3CE700F38A28 /* MeLiAppTests */,
+				48E2D7C827DC3CE700F38A28 /* MeLiAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48E2D7AD27DC3CE600F38A28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F42D6227DDC8030004969E /* mockMeLi.json in Resources */,
+				48E2D7BA27DC3CE700F38A28 /* Preview Assets.xcassets in Resources */,
+				48E2D7B727DC3CE700F38A28 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E2D7BD27DC3CE700F38A28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E2D7C727DC3CE700F38A28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48E2D7AB27DC3CE600F38A28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E2D7ED27DC6D7400F38A28 /* HomeSearchPresenter.swift in Sources */,
+				48E2D7F727DC6F8B00F38A28 /* DetailSearchInteractor.swift in Sources */,
+				48E2D7F327DC6F6D00F38A28 /* DetailSearchView.swift in Sources */,
+				48E2D7E527DC64F100F38A28 /* DataModel.swift in Sources */,
+				48E2D7EB27DC6D5100F38A28 /* HomeSearchRouter.swift in Sources */,
+				48B077B727DC8F2A00ECAEBF /* HomeSearchInteractor.swift in Sources */,
+				48F42D5A27DD4BAD0004969E /* APIService.swift in Sources */,
+				48E2D7E327DC5FF900F38A28 /* ListSearchView.swift in Sources */,
+				48E2D7F527DC6F7C00F38A28 /* DetailSearchPresenter.swift in Sources */,
+				48E2D7B527DC3CE600F38A28 /* HomeSearchView.swift in Sources */,
+				48E2D7B327DC3CE600F38A28 /* MeLiAppApp.swift in Sources */,
+				48F42D6527DDCBBA0004969E /* Utils.swift in Sources */,
+				48E2D7E927DC661000F38A28 /* ListSearchInteractor.swift in Sources */,
+				48E2D7E727DC657D00F38A28 /* Item.swift in Sources */,
+				48E2D7EF27DC6E3200F38A28 /* ListSearchPresenter.swift in Sources */,
+				48E2D7F127DC6EEE00F38A28 /* ListSearchRouter.swift in Sources */,
+				48E2D7E127DC4AE200F38A28 /* SplashView.swift in Sources */,
+				48F42D5F27DD674F0004969E /* ListItemCell.swift in Sources */,
+				4851CFFF27E7A0C800521965 /* ModelCreatorHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E2D7BB27DC3CE700F38A28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E2D7C427DC3CE700F38A28 /* MeLiAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E2D7C527DC3CE700F38A28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E2D7CE27DC3CE700F38A28 /* MeLiAppUITests.swift in Sources */,
+				48E2D7D027DC3CE700F38A28 /* MeLiAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48E2D7C127DC3CE700F38A28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48E2D7AE27DC3CE600F38A28 /* MeLiApp */;
+			targetProxy = 48E2D7C027DC3CE700F38A28 /* PBXContainerItemProxy */;
+		};
+		48E2D7CB27DC3CE700F38A28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48E2D7AE27DC3CE600F38A28 /* MeLiApp */;
+			targetProxy = 48E2D7CA27DC3CE700F38A28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		48E2D7D127DC3CE700F38A28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48E2D7D227DC3CE700F38A28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48E2D7D427DC3CE700F38A28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MeLiApp/Preview Content\"";
+				DEVELOPMENT_TEAM = D5TMQAUT3Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeLiApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ludin-s-IT.MeLiApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48E2D7D527DC3CE700F38A28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MeLiApp/Preview Content\"";
+				DEVELOPMENT_TEAM = D5TMQAUT3Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeLiApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ludin-s-IT.MeLiApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		48E2D7D727DC3CE700F38A28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5TMQAUT3Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ludin-s-IT.MeLiAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeLiApp.app/MeLiApp";
+			};
+			name = Debug;
+		};
+		48E2D7D827DC3CE700F38A28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5TMQAUT3Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ludin-s-IT.MeLiAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeLiApp.app/MeLiApp";
+			};
+			name = Release;
+		};
+		48E2D7DA27DC3CE700F38A28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5TMQAUT3Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ludin-s-IT.MeLiAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeLiApp;
+			};
+			name = Debug;
+		};
+		48E2D7DB27DC3CE700F38A28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5TMQAUT3Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ludin-s-IT.MeLiAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeLiApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48E2D7AA27DC3CE500F38A28 /* Build configuration list for PBXProject "MeLiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E2D7D127DC3CE700F38A28 /* Debug */,
+				48E2D7D227DC3CE700F38A28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E2D7D327DC3CE700F38A28 /* Build configuration list for PBXNativeTarget "MeLiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E2D7D427DC3CE700F38A28 /* Debug */,
+				48E2D7D527DC3CE700F38A28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E2D7D627DC3CE700F38A28 /* Build configuration list for PBXNativeTarget "MeLiAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E2D7D727DC3CE700F38A28 /* Debug */,
+				48E2D7D827DC3CE700F38A28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E2D7D927DC3CE700F38A28 /* Build configuration list for PBXNativeTarget "MeLiAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E2D7DA27DC3CE700F38A28 /* Debug */,
+				48E2D7DB27DC3CE700F38A28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4851D00027E7EC1300521965 /* XCRemoteSwiftPackageReference "alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alamofire/alamofire.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4851D00127E7EC1300521965 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4851D00027E7EC1300521965 /* XCRemoteSwiftPackageReference "alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 48E2D7A727DC3CE500F38A28 /* Project object */;
+}
